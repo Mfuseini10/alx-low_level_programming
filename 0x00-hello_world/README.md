@@ -1,5 +1,7 @@
 # 0x00. C-Hello, World
+
 ## Requirements
+
 ### C
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -18,3 +20,8 @@
 The first line of all your files should be exactly #!/bin/bash
 
 ## Tasks
+[0. Preprocessor](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
+
+Write a script that runs a C file through the preprocessor and save the result into another file.
+* The C file name will be saved in the variable $CFILE
+* The output should be saved in the file c

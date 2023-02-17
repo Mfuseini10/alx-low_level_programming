@@ -20,65 +20,72 @@
 The first line of all your files should be exactly #!/bin/bash
 
 ## Tasks
-[0. Preprocessor](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
+[0. Positive anything is better than negative nothing](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)
 
-Write a script that runs a C file through the preprocessor and save the result into another file.
-* The C file name will be saved in the variable $CFILE
-* The output should be saved in the file c
+This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative.
+* You can find the source code here
+* The variable n will store a different value every time you will run this program
+* You don’t have to understand what rand, srand, RAND_MAX do. Please do not touch this code
+* The output of the program should be:
+ * The number, followed by
+  * if the number is greater than 0: is positive
+  * if the number is 0: is zero
+  * if the number is less than 0: is negative
+ * followed by a new line
 
-[1. Compiler](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler)
+[1. The last digit](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c)
 
-Write a script that compiles a C file but does not link.
-* The C file name will be saved in the variable $CFILE
-* The output file should be named the same as the C file, but with the extension .o instead of .c.
-  *Example: if the C file is main.c, the output file should be main.o
+This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.
+* You can find the source code here
+* The variable n will store a different value every time you run this program
+* You don’t have to understand what rand, srand, and RAND_MAX do. Please do not touch this code
+* The output of the program should be:
+ * The string Last digit of, followed by
+ * n, followed by
+ * the string is, followed by
+  * if the last digit of n is greater than 5: the string and is greater than 5
+  * if the last digit of n is 0: the string and is 0
+  * if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
+ * followed by a new line
   
-[2. Assembler](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler)
+[2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)
 
-Write a script that generates the assembly code of a C code and save it in an output file.
-* The C file name will be saved in the variable $CFILE
-* The output file should be named the same as the C file, but with the extension .s instead of .c.
-  * Example: if the C file is main.c, the output file should be main.s
+Write a program that prints the alphabet in lowercase, followed by a new line.
+* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* All your code should be in the main function
+* You can only use putchar twice in your code
 
-[3. Name](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/3-name)
+[3. alphABET](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c)
 
-Write a script that compiles a C file and creates an executable named cisfun.
+Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* All your code should be in the main function
+* You can only use putchar three times in your code
 
-The C file name will be saved in the variable $CFILE
+[4. When I was having that alphabet soup, I never thought that it would pay off](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/4-print_alphabt.c)
 
-[4. Hello, puts](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/4-puts.c)
+Write a program that prints the alphabet in lowercase, followed by a new line.
+* Print all the letters except q and e
+* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* All your code should be in the main function
+* You can only use putchar twice in your code
 
-Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-* Use the function puts
-* You are not allowed to use printf
-* Your program should end with the value 0
+[5. Numbers](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/5-print_numbers.c)
 
-[5. Hello, printf](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/5-printf.c)
+Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+* All your code should be in the main function
 
-Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
-* Use the function printf
-* You are not allowed to use the function puts
-* Your program should return 0
-* Your program should compile without warning when using the -Wall gcc option
+[6. Numberz](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/6-print_numberz.c)
 
-[6. Size is not grandeur, and territory does not make a nation](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)
+Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+* You are not allowed to use any variable of type char
+* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* You can only use putchar twice in your code
+* All your code should be in the main function
 
-Write a C program that prints the size of various types on the computer it is compiled and run on.
-* You should produce the exact same output as in the example
-Warnings are allowed
-* Your program should return 0
-* You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+[7. Smile in the mirror](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)
 
-[7. Intel](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/100-intel)
-
-Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
-* The C file name will be saved in the variable $CFILE.
-* The output file should be named the same as the C file, but with the extension .s instead of .c.
-Example: if the C file is main.c, the output file should be main.s
-
-[8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](https://github.com/Mfuseini10/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)
-
-Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
-* You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
-* Your program should return 1
-* Your program should compile without any warnings when using the -Wall gcc option
+Write a program that prints the lowercase alphabet in reverse, followed by a new line.
+* You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+* All your code should be in the main function
+* You can only use putchar twice in your code

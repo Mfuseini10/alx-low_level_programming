@@ -1,20 +1,22 @@
-#include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * Main - Enrty point
+ * main - entry point
  *
- * Return: always 0
+ *
+ * Return: always return 0
+ *
  */
 int main(void)
 {
 	int n;
 	int lastn;
 
-	srant(time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lastn = n % 10
+	lastn = n % 10;
 
 	if (lastn > 5)
 	{

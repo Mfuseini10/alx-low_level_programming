@@ -1,4 +1,4 @@
-#ifndef _MAIN_H_
+#ifndef _MAIN_H_f
 #define _MAIN_H_
 /**
  * _putchar - writes the character c to std

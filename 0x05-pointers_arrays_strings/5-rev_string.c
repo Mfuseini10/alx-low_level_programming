@@ -8,8 +8,8 @@
   */
 void rev_string(char *s)
 {
-	int a, b, k;
-	char *c, aux;
+	int a, b, c;
+	char *k, aux;
 
 	k = s;
 
@@ -20,14 +20,14 @@ void rev_string(char *s)
 
 	for (c = 1; c < b; c++)
 	{
-		a++;
+		k++;
 	}
 
-	for (a = 0; a < (b / 2); i++)
+	for (a = 0; a < (b / 2); a++)
 	{
 		aux = s[a];
 		s[a] = *k;
 		*k = aux;
-		c--;
+		k--;
 	}
 }

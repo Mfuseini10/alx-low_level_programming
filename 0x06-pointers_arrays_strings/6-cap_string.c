@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio>
-#include "holberton.h"
+
 /**
  * _indexOf - returns boolean if special  character
  * @a: character to return

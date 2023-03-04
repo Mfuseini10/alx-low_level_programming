@@ -1,9 +1,11 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * set_string -  sets a string
  * @s: string to set
- * @to: value to set to
+ * @to: value to assign
+ *
+ * Return: 0
  */
 void set_string(char **s, char *to)
 {

@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio>
 /**
- * _strpbrk - search for string
+ * _strpbrk - search string
  * @s: string
- * @accept: accept
+ * @accept: accepting
+ *
  * Return: value
  */
 char *_strpbrk(char *s, char *accept)

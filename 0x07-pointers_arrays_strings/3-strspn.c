@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strpn - length of a prefi substring
+ * _strspn - length of a prefi substring
  * @s: string
  * @accept: byte accepted
  * Return: unsigned result

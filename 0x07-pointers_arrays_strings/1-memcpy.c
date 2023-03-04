@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _memcpy - copyring from src to dest
  * @dest: destination
  * @src: source

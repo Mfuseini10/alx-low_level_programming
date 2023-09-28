@@ -9,15 +9,13 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-    int bit_val;
+	int bit_value;
 
-    // Check if the index is out of bounds
-    if (index > 63)
-        return (-1);
+	if (index > 63)
+		return (-1);
 
-    // Shift the desired bit to the least significant position and use bitwise AND to extract its value
-    bit_val = (n >> index) & 1;
+	bit_value = (n >> index) & 1;
 
-    return (bit_val);
+	return (bit_value);
 }
 

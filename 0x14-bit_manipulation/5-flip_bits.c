@@ -10,20 +10,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-    int i, count = 0;
-    unsigned long int current;
-    unsigned long int exclusive = n ^ m; // XOR to find differing bits
+	int i, count = 0;
+	unsigned long int current;
+	unsigned long int exclusive = n ^ m;
 
-    // Iterate through each bit of the XOR result
-    for (i = 63; i >= 0; i--)
-    {
-        current = exclusive >> i;
+	for (i = 63; i >= 0; i--)
+	{
+		current = exclusive >> i;
+		if (current & 1)
+			count++;
+	}
 
-        // Check if the least significant bit is set (1)
-        if (current & 1)
-            count++;
-    }
-
-    return (count);
+	return (count);
 }
 

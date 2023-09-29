@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - prints the binary representation of a decimal number without using arrays, malloc, or the % and / operators.
+ * print_binary - prints bin of a decimal number.
  * @n: the number to print in binary
  */
 void print_binary(unsigned long int n)
